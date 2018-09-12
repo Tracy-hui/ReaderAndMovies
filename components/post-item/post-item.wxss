@@ -1,0 +1,41 @@
+.post-container {
+  margin-top: 20rpx;
+  padding: 10px 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.post-avatar {
+  margin: 0 10px;
+  vertical-align: middle;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.post-date{
+  vertical-align: middle;
+  font-size: 12px;
+}
+.post-image{
+  margin-top: 10px;
+  width: 750rpx;
+  height: 240rpx;
+}
+.post-title{
+  padding: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.post-like {
+  display: flex;
+  flex-direction: row;
+}
+.post-like-image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.post-like-num{
+  font-size: 12px;
+}

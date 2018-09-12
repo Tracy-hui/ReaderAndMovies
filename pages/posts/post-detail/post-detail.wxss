@@ -1,0 +1,65 @@
+/**posts.wxss**/
+.post-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+.banner{
+  width: 750rpx;
+  height: 240rpx;
+}
+.title {
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.auth-box {
+  padding: 0 10px;
+  flex-direction: row;
+  font-size: 14px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.auth {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.share-box {
+  flex-direction: row;
+  text-align: right;
+  padding: 0 10px;
+  position: relative;
+}
+.share {
+  width: 60rpx;
+  height: 60rpx;
+}
+.share + .share {
+  margin-left: 20px;
+}
+.line {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  height: 1px;
+  width: 700rpx;
+  margin: 0 auto;
+  background: #eeeeee;
+  z-index: -99;
+}
+.text-container {
+  padding: 10px;
+}
+.audio {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 55rpx;
+  opacity: 0.6;
+  border-radius: 50%;
+}

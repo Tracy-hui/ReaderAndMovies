@@ -1,0 +1,20 @@
+<!--posts.wxml-->
+<view class="post-detail-container">
+  <image class="banner" src="{{play ? postData.music.coverImgUrl : postData.headImgSrc}}" />
+  <image class="audio" catchtap="onMusicTap" src="{{play ? '/images/audio-pause.png' : '/images/audio.png'}}" />
+  <text class="title">{{postData.title}}</text>
+  <view class="auth-box">
+    <image class="avatar" src="{{postData.avatar}}" />
+    <text class="auth">{{postData.author}}：发表于</text>
+    <text class="date">{{postData.date}}</text>
+  </view>
+  <view class="share-box">
+    <image class="share" wx:if="{{collected}}" catchtap="onCollectionTap" src="/images/collection1.png" />
+    <image class="share" wx:else catchtap="onCollectionTap" src="/images/collection0.png" />
+    <image class="share" catchtap="onShareTap" src="/images/share.png" />
+    <view class="line"></view>
+  </view>
+  <view class="text-container">
+    {{postData.detail}}
+  </view>
+</view>
